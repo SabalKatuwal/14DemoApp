@@ -11,7 +11,7 @@ import SwiftUI
 struct FourteenZoneTaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserListView(viewModel: UserListViewModel(userService: UserService()))
         }
     }
 }

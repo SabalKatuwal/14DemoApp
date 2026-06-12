@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		A6FA60D52FDC3D1000E50363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FA60AE2FDC3C0700E50363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FA60B52FDC3C0700E50363;
+			remoteInfo = FourteenZoneTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A6FA60B62FDC3C0700E50363 /* FourteenZoneTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourteenZoneTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FA60D02FDC3D1000E50363 /* FourteenZoneTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourteenZoneTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = FourteenZoneTask;
 			sourceTree = "<group>";
 		};
+		A6FA60D12FDC3D1000E50363 /* FourteenZoneTaskTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FourteenZoneTaskTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A6FA60B32FDC3C0700E50363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FA60CE2FDC3D1000E50363 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FA60B82FDC3C0700E50363 /* FourteenZoneTask */,
+				A6FA60D12FDC3D1000E50363 /* FourteenZoneTaskTests */,
 				A6FA60B72FDC3C0700E50363 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FA60B62FDC3C0700E50363 /* FourteenZoneTask.app */,
+				A6FA60D02FDC3D1000E50363 /* FourteenZoneTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = A6FA60B62FDC3C0700E50363 /* FourteenZoneTask.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A6FA60CF2FDC3D1000E50363 /* FourteenZoneTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FA60D62FDC3D1000E50363 /* Build configuration list for PBXNativeTarget "FourteenZoneTaskTests" */;
+			buildPhases = (
+				A6FA60CC2FDC3D1000E50363 /* Sources */,
+				A6FA60CE2FDC3D1000E50363 /* Frameworks */,
+				A6FA60CD2FDC3D1000E50363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FA60D42FDC3D1000E50363 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A6FA60D12FDC3D1000E50363 /* FourteenZoneTaskTests */,
+			);
+			name = FourteenZoneTaskTests;
+			packageProductDependencies = (
+			);
+			productName = FourteenZoneTaskTests;
+			productReference = A6FA60D02FDC3D1000E50363 /* FourteenZoneTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					A6FA60B52FDC3C0700E50363 = {
 						CreatedOnToolsVersion = 26.3;
+					};
+					A6FA60CF2FDC3D1000E50363 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = A6FA60B52FDC3C0700E50363;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				A6FA60B52FDC3C0700E50363 /* FourteenZoneTask */,
+				A6FA60CF2FDC3D1000E50363 /* FourteenZoneTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A6FA60B42FDC3C0700E50363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FA60CD2FDC3D1000E50363 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6FA60CC2FDC3D1000E50363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FA60D42FDC3D1000E50363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FA60B52FDC3C0700E50363 /* FourteenZoneTask */;
+			targetProxy = A6FA60D52FDC3D1000E50363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A6FA60BF2FDC3C0900E50363 /* Debug */ = {
@@ -178,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -236,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -261,6 +336,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +369,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +384,48 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6FA60D72FDC3D1000E50363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 748CDJ9KNG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbl.FourteenZoneTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourteenZoneTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FourteenZoneTask";
+			};
+			name = Debug;
+		};
+		A6FA60D82FDC3D1000E50363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 748CDJ9KNG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbl.FourteenZoneTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourteenZoneTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FourteenZoneTask";
 			};
 			name = Release;
 		};
@@ -327,6 +446,15 @@
 			buildConfigurations = (
 				A6FA60C22FDC3C0900E50363 /* Debug */,
 				A6FA60C32FDC3C0900E50363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FA60D62FDC3D1000E50363 /* Build configuration list for PBXNativeTarget "FourteenZoneTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FA60D72FDC3D1000E50363 /* Debug */,
+				A6FA60D82FDC3D1000E50363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
