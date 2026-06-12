@@ -90,19 +90,6 @@ Cache (UserCacheService) + URLSession
      -destination 'platform=iOS Simulator,name=iPhone 16'
    ```
 
-### Build IPA
-
-For submission, generate an IPA using the included script:
-
-```bash
-chmod +x Scripts/build-ipa.sh
-./Scripts/build-ipa.sh
-```
-
-The IPA will be exported to `build/ipa/FourteenZoneTask.ipa`.
-
-> **Note:** For App Store or device distribution, update `Scripts/ExportOptions.plist` with your signing certificate and provisioning profile, and enable code signing in the build script.
-
 ## API
 
 - **Endpoint:** `GET https://jsonplaceholder.typicode.com/users`
@@ -115,13 +102,3 @@ The IPA will be exported to `build/ipa/FourteenZoneTask.ipa`.
 - The IPA build script uses manual/ad-hoc export settings suitable for development builds. Production signing requires your Apple Developer credentials.
 - Search is performed locally on the loaded user list (no server-side search).
 - Unit tests use mock networking and do not hit the live API.
-
-## Demo
-
-Record a screen capture while running the app in the Simulator to demonstrate:
-
-1. Loading state on launch
-2. User list with name, email, and city
-3. Search filtering
-4. Pull-to-refresh
-5. Navigation to user detail screen
